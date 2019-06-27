@@ -38,7 +38,7 @@ pipeline {
             steps {
                 sh 'pyinstaller --onefile sources/add2vals.py'
 		sh 'pwd'
-		sh 'python sources/add2vals.py 50 94 >/var/www2/html/index.html'
+		sh 'python sources/add2vals.py 50 94 >index.html'
             }
             post {
                 success {
